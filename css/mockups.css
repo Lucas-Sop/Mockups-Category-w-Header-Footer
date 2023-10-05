@@ -7,10 +7,8 @@
 
 h3 {
     font-size: 20px!important;
-    display: flex;
-    align-items: center!important;
     margin: 0!important; /* Para quitar cualquier margen predeterminado que pueda tener */
-  }
+}
 
 p {
     font-size: 1.563em; /*17px*/
@@ -18,13 +16,9 @@ p {
     line-height: 1;
 }
 
-
-a {
-    
-    font-size: 400;
+a {   
     font-size: 1em; /*16px*/
     color: #000!important;
-
 }
 
 hr {color: black;}
@@ -36,17 +30,11 @@ hr {color: black;}
     gap: 10px;
 }
 
-
-
-
-
-
 /*
     ====================
     ====== HEADER ======
     ====================
 */
-
 
 /* ===== ALERT ======= */
 
@@ -65,7 +53,6 @@ hr {color: black;}
     display: flex;
     align-items: center;
    }
-
 
 /* ===== Contenedor Header ======= */
 
@@ -106,13 +93,11 @@ hr {color: black;}
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    display: inline-block;
     outline: none;
     border-radius: 5px;
     border: 2px solid #2a2a2a;
     background: transparent;
-    display: flex;
-    align-items: center;
+    
     gap: 0.5rem;
 }
 
@@ -238,6 +223,7 @@ main{
 
 .bi-arrow-right {font-size: 1.5rem;} /* Tamaño deseado, puedes ajustarlo según tus preferencias */
 .zocalo .bi-arrow-right {font-size: 2rem;}
+.zocalo .bi-arrow-right:hover {transform: scale(1.5,1.5);}
 
 .image-container {
     height: 300px; /* Establece la altura fija deseada */
@@ -247,8 +233,20 @@ main{
     border: 1px solid #000;
     text-align: center;
     border-radius: 1%;
-    border: 2px solid rgba(0,0,0,0.2)
+    border: 2px solid rgba(0,0,0,0.2);    
 }
+
+.image-container img {
+  /* object-fit: cover; */
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.image-container:hover {
+    border: 2px solid rgba(0,0,0,0.5);
+    transform: scale(1.1,1.1);
+     z-index: 2; 
+    transition: all 0.3s ease;
+  }
 
 /*  =========================
     ====== Footer ===========
@@ -261,10 +259,8 @@ footer {
     width: 80vw;
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
-    
     margin: 0 auto;
     text-align: center;
-    
 }
 
 .footer-row {
@@ -279,20 +275,15 @@ footer {
   justify-content: space-between;
   border-bottom: 1px solid #ccc; /* Línea que divide la primera fila de la segunda fila */
 }
-.footer-row:nth-child(2) {
+.footer-row:nth-child(2) {border-bottom: 1px solid #ccc;} /* Línea que divide la primera fila de la segunda fila */
 
-  border-bottom: 1px solid #ccc; /* Línea que divide la primera fila de la segunda fila */
-}
 
 .left, .right{
   display: flex;
   align-items: center;
 }
 
-.center-text {
-  display: none; 
-
-}
+.center-text {display: none;}
 
 .left img {
   width: 40px; /* Ocupa el ancho del <p> */
@@ -355,8 +346,6 @@ ul li {
   text-decoration: none;
 }
 
-
-
 .arrow-link img {
   transition: transform 0.3s; 
 }
@@ -369,7 +358,6 @@ ul li {
     ====== Media Query ======
     ========================= 
 */
-
 
 /* ====== mobile a partir de 768px ====== */
 @media screen and (min-width:768px) {
@@ -425,7 +413,6 @@ ul li {
       .center-text {
         display: block; /* Mostrar el texto en dispositivos con ancho mayor o igual a 1024px */
         font-size: 15px;
-      
         text-align: center; /* Centrar el texto */
       }
       .footer-row:nth-child(3) {
