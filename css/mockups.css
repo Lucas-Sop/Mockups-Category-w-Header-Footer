@@ -229,7 +229,7 @@ main{
     height: 300px; /* Establece la altura fija deseada */
     width: 100%; /* Permite que el ancho se ajuste automáticamente */
     overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
-    background-color: rgb(235,235,235);
+    background-color: rgba(239,244,248,255);
     border: 1px solid #000;
     text-align: center;
     border-radius: 1%;
