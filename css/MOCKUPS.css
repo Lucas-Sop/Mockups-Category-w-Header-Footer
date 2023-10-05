@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+}
+
+
+h1 {
+    font-weight: 800;
+    font-size: 3em; /*48px*/
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 600 bold;
+    font-size: 1.375em; /*22px*/
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.188em; /*19px*/
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.063em; /*17px*/
+}
+
+a {
+    font-size: 400;
+    font-size: 1em; /*16px*/
+    color: #000;
+}
+
+hr {
+    color: #c6c6c6;
+}
+
+
+.alert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.colorSpecial {
+    color: #c6c6c6;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.phoneHeader{
+    display: none;
+}
+
+.shop{
+    display: none;
+}
+
+.btnCategoryTwo {
+    display: none;
+}
+
+
+.containerHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.logoHeader{
+    display: flex;
+    align-items: center;
+}
+
+.logoHeader img {
+    height: 100px;
+}
+
+.logoHeader p {
+    font-weight: 600;
+}
+
+.menuHeader{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.searchInput{
+    display: none;
+}
+
+.searchBtn {
+    min-width: 130px;
+    height: 40px;
+    color: #1a1a1a;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #2a2a2a;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.searchIcon{
+    font-size: 0.9rem;
+}
+
+.menu button{
+    padding: 3px 10px;
+    background-color: transparent;
+    border: 2px solid #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.menuIcon{
+    font-size: 1.5rem;
+    color: #3a3a3a;
+}
+/*fin de la ediccion header*/
+
+
+@media screen and (min-width:1024px) {
+    .containerHeader{
+        width: 90%;
+    }
+
+    .phoneHeader{
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .shop{
+    display: block;
+    }
+
+    .shop button{
+        height: 4.4vh;
+        padding: 0px 10px;
+        background-color: transparent;
+        border: 2px solid #3a3a3a;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
